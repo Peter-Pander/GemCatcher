@@ -1,5 +1,11 @@
 # — Godot project files & caches —
-.godot/                # Editor’s own folder (layout, history, caches)
-.import/               # Raw import cache
-*.import               # Per-file import metadata (e.g. icon.svg.import)
-export.cfg             # Local export settings
+.godot/                 # Editor’s own folder (layout, history, caches)
+.import/                # Raw import cache
+*.import                # Per-file import metadata
+export.cfg              # Local export settings
+export_presets.cfg      # Export presets you haven’t checked in
+editor_layout.cfg       # Editor UI layout
+uid_cache.bin           # AssetDB UID cache
+favorite_properties.*   # Inspector “favorites” state
+filesystem_*            # Filesystem caches (e.g. filesystem_cache10_*)
+project_metadata.*      # Project session history, metadata
