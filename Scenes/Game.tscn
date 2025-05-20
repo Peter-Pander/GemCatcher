@@ -16,4 +16,10 @@ position = Vector2(557, 617)
 scale = Vector2(0.65, 0.65)
 
 [node name="Gem" parent="." instance=ExtResource("3_j5yw3")]
-position = Vector2(547, 185)
+position = Vector2(159, 104)
+
+[node name="Gem2" parent="." instance=ExtResource("3_j5yw3")]
+position = Vector2(542, 173)
+
+[node name="Gem3" parent="." instance=ExtResource("3_j5yw3")]
+position = Vector2(986, 103)
