@@ -2,3 +2,4 @@ res://Scenes/Paddle/Paddle.tscn
 res://Scenes/Game.tscn
 res://Scenes/Gem/Gem.tscn
 res://Scenes/Gem/Gem.gd
+res://Scenes/Paddle/Paddle.gd
