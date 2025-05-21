@@ -1,6 +1,9 @@
 extends Area2D
 
 
+class_name Gem
+
+
 signal gem_off_screen
 
 
