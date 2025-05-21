@@ -1,5 +1,9 @@
 extends Area2D
 
+
+signal gem_off_screen
+
+
 # How fast the gem falls (pixels per second)
 const SPEED: float = 100.0
 
@@ -15,6 +19,7 @@ func _process(delta: float) -> void:
 	# If it falls below the bottom of the viewport, free it
 	if position.y > get_viewport_rect().end.y:
 		print("Gem falls off")
+		gem_off_screen.emit()
 		die()
 
 
