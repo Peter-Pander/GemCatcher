@@ -2,17 +2,19 @@ extends Node2D
 
 
 const GEM = preload("res://Scenes/Gem/Gem.tscn")
-
+const MARGIN: float = 70.0
 
 func _ready() -> void:
 	spawn_gem()
 
 
-
 func spawn_gem() -> void:
 	var new_gem: Gem = GEM.instantiate()
-	var x_pos: float = 100.0
-	new_gem.position = Vector2(x_pos, -50.0)
+	var x_pos: float = randf_range(
+		get_viewport_rect().position.x + MARGIN,
+		get_viewport_rect().end.x -MARGIN
+	)
+	new_gem.position = Vector2(x_pos, -MARGIN)
 	new_gem.gem_off_screen.connect(_on_gem_off_screen)
 	add_child(new_gem)
 
