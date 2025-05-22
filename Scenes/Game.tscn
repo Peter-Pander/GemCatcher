@@ -30,5 +30,16 @@ autoplay = true
 [node name="ScoreSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_b2bpf")
 
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 17.0
+offset_top = 19.0
+offset_right = 57.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.651725, 0.223159, 0.223286, 1)
+theme_override_colors/font_shadow_color = Color(0.924469, 0.965844, 0.998849, 0)
+theme_override_colors/font_outline_color = Color(0, 0.702964, 0.312618, 1)
+theme_override_font_sizes/font_size = 48
+text = "000"
+
 [connection signal="area_entered" from="Paddle" to="." method="_on_paddle_area_entered"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_timer_timeout"]
